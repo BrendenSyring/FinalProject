@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64C8F8A32B056FDC00151E63 /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C8F8A22B056FDC00151E63 /* FinalProjectApp.swift */; };
-		64C8F8A52B056FDC00151E63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C8F8A42B056FDC00151E63 /* ContentView.swift */; };
 		64C8F8A72B056FE000151E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C8F8A62B056FE000151E63 /* Assets.xcassets */; };
 		64C8F8AA2B056FE000151E63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C8F8A92B056FE000151E63 /* Preview Assets.xcassets */; };
 		64C8F8B42B056FE100151E63 /* FinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C8F8B32B056FE100151E63 /* FinalProjectTests.swift */; };
 		64C8F8BE2B056FE100151E63 /* FinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C8F8BD2B056FE100151E63 /* FinalProjectUITests.swift */; };
 		64C8F8C02B056FE100151E63 /* FinalProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C8F8BF2B056FE100151E63 /* FinalProjectUITestsLaunchTests.swift */; };
+		64C8F8D02B05704A00151E63 /* MyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C8F8CD2B05704900151E63 /* MyAppView.swift */; };
+		64C8F8D12B05704A00151E63 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C8F8CE2B05704A00151E63 /* MyApp.swift */; };
+		64C8F8D22B05704A00151E63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C8F8CF2B05704A00151E63 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,6 @@
 
 /* Begin PBXFileReference section */
 		64C8F89F2B056FDC00151E63 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		64C8F8A22B056FDC00151E63 /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
-		64C8F8A42B056FDC00151E63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64C8F8A62B056FE000151E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C8F8A92B056FE000151E63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64C8F8AF2B056FE100151E63 /* FinalProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,10 @@
 		64C8F8B92B056FE100151E63 /* FinalProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C8F8BD2B056FE100151E63 /* FinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectUITests.swift; sourceTree = "<group>"; };
 		64C8F8BF2B056FE100151E63 /* FinalProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64C8F8CC2B05704800151E63 /* FinalProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinalProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		64C8F8CD2B05704900151E63 /* MyAppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppView.swift; sourceTree = "<group>"; };
+		64C8F8CE2B05704A00151E63 /* MyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
+		64C8F8CF2B05704A00151E63 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +97,12 @@
 		64C8F8A12B056FDC00151E63 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
-				64C8F8A22B056FDC00151E63 /* FinalProjectApp.swift */,
-				64C8F8A42B056FDC00151E63 /* ContentView.swift */,
+				64C8F8CF2B05704A00151E63 /* ContentView.swift */,
+				64C8F8CE2B05704A00151E63 /* MyApp.swift */,
+				64C8F8CD2B05704900151E63 /* MyAppView.swift */,
 				64C8F8A62B056FE000151E63 /* Assets.xcassets */,
 				64C8F8A82B056FE000151E63 /* Preview Content */,
+				64C8F8CC2B05704800151E63 /* FinalProject-Bridging-Header.h */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				TargetAttributes = {
 					64C8F89E2B056FDC00151E63 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					64C8F8AE2B056FE100151E63 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -257,8 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C8F8A52B056FDC00151E63 /* ContentView.swift in Sources */,
-				64C8F8A32B056FDC00151E63 /* FinalProjectApp.swift in Sources */,
+				64C8F8D02B05704A00151E63 /* MyAppView.swift in Sources */,
+				64C8F8D12B05704A00151E63 /* MyApp.swift in Sources */,
+				64C8F8D22B05704A00151E63 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FinalProject/Preview Content\"";
@@ -432,6 +440,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrendenSyr.FinalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FinalProject/FinalProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FinalProject/Preview Content\"";
@@ -460,6 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrendenSyr.FinalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FinalProject/FinalProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
